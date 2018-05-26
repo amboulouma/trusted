@@ -4,29 +4,59 @@
 
     <section class="search-container">
       <div class="search-top">
-        <input id="search-bar" type="text" name="search" value="Tesla Model S">
+        
+        <input id="search-bar" type="text" name="search" value="Tesla Model S" class="form-control">
       </div>
       <div class="search-bottom">
-        <select>
-          <option value="" selected disabled hidden>Maker</option>
-          <option value="audi">Audi</option>
-          <option value="tesla">Tesla</option>
-        </select>
-        <select>
-          <option value="" selected disabled hidden>Model</option>
-          <option value="audi">S</option>
-          <option value="tesla">X</option>
-        </select>
-        <select>
-          <option value="" selected disabled hidden>Price ranges</option>
-          <option value="audi">S</option>
-          <option value="tesla">X</option>
-        </select>
-        <select>
-          <option value="" selected disabled hidden>Rate</option>
-          <option value="audi">S</option>
-          <option value="tesla">X</option>
-        </select>
+
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px; margin-top:30px;">
+          Brand
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+       </div>
+
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px; margin-top:30px;">
+          Model
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+       </div>
+
+
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px; margin-top:30px;">
+          Price range
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+       </div>
+
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px; margin-top:30px;">
+          Rate
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+       </div>
+
+
+       
       </div>
     </section>
 
@@ -39,7 +69,6 @@
         <div class="text-container">
           <p class="car-id">{{ car.make }} {{ car.model }}</p>
           <p class="car-information"><span>Price: {{ car.price }}</span><span>Milage: {{ car.milage }}</span></p>
-          <button class="buy-btn" type="button">Look</button>
         </div>
         </a>
       </div>
