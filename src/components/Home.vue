@@ -1,6 +1,5 @@
 <template lang="html">
   <div class="home">
-
     <div class="jumbotron"></div>
 
     <section class="search-container">
@@ -33,7 +32,7 @@
 
     <section class="car-boxes">
       <div class="car" v-for="car in cars">
-        <router-link to="/car">
+        <a href="../../detail/index.html">
         <div class="img-container">
           <img :src="car.img">
         </div>
@@ -42,7 +41,7 @@
           <p class="car-information"><span>Price: {{ car.price }}</span><span>Milage: {{ car.milage }}</span></p>
           <button class="buy-btn" type="button">Look</button>
         </div>
-        </router-link>
+        </a>
       </div>
     </section>
 
@@ -147,14 +146,14 @@ search {
 .car {
   border: 2px solid black;
   width: 350px;
-  height: 345px;
+  height: 360px;
   margin: 1em;
 }
 
 .img-container {
   width: 346px;
-  height: 250px;
-  background-color: #FAFAFA;
+  height: 260px;
+  background-color: #cccccc;
 }
 
 .img-container img {
@@ -163,7 +162,7 @@ search {
 }
 
 .text-container {
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .car-id {

@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    
     <nav id="menu">
       <div class="nav-left">
-        <p><router-link tag="div" to="/"><img src="./assets/gefco.png" alt="Gefco"></router-link></p>
+        <img src="./assets/logo.png">
       </div>
       <div class="nav-right">
         <p><a href="/">Our mission</a></p>
@@ -27,6 +26,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #F5F6F7;
 }
 
 .nav-right {
@@ -35,5 +35,9 @@ export default {
 
 .nav-right p {
   padding-right: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
