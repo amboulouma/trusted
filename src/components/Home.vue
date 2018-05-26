@@ -62,15 +62,15 @@
 
     <section class="car-boxes">
       <div class="car" v-for="car in cars">
-        <a href="../../detail/index.html">
         <div class="img-container">
+        <a href="../../detail/index.html">
           <img :src="car.img">
+        </a>
         </div>
         <div class="text-container">
           <p class="car-id">{{ car.make }} {{ car.model }}</p>
           <p class="car-information"><span>Price: {{ car.price }}</span><span>Milage: {{ car.milage }}</span></p>
         </div>
-        </a>
       </div>
     </section>
 
